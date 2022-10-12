@@ -13,5 +13,20 @@ matrix = [
     ['x', 'x', 'x', 'x', 'x', 'x', 'x'],
 ]
 
-matrix, route = find_path(matrix, start, end)
+matrix, route = find_path(matrix, start, end, barrier_char='x')
+```
+# Output
+```
+# path
+[(3, 3), (2, 3), (1, 3), (1, 2), (1, 2)]
+
+# matrix
+[
+ ["x", "x", "x", "x", "x", "x", "x"],
+ ["x", "x", "#", "#", "x", "x", "x"],
+ ["x", "x", "x", "#", "x", "x", "x"],
+ ["x", "x", "x", "#", "x", "x", "x"],
+ ["x", "x", "x", "x", "x", "x", "x"],
+ ["x", "x", "x", "x", "x", "x", "x"]
+]
 ```
